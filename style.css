@@ -24,8 +24,37 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align logos to the left */
+  gap: 0px; /* Space between the logos */
+}
+.logo-container h1 {
+  margin-left: -20px;
+  margin-top: 45px;
+  /* color: #8fedd9; */
+}
+.logo-container h1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 .logo {
-  width: 140px;
+  width: 50px;
+  margin-right: 0px;
+}
+.logo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.Plogo {
+  width: 150px;
+  margin-left: 0; /* Remove margin-left to avoid extra spacing */
+  margin-right: 10px;
+}
+.Plogo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 nav ul li {
   display: inline-block;
@@ -151,6 +180,8 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
   width: 250px;
+  margin-bottom: -40px;
+  margin-top: -250px;
   /* border-radius: 50%; */
   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
@@ -382,7 +413,7 @@ ul li span {
 }
 
 body {
-  background-color: #8fedd9;
+  background-color: #f9738c;
 }
 
 .wrapper {
@@ -398,6 +429,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+  margin-left: -300px;
 }
 
 .card {
