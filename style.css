@@ -366,6 +366,7 @@ ul li span {
 /* } */
 /* -----------------------------------section-divider----------------------- */
 /* Existing styles */
+
 #projects .projects_subtitle {
   text-align: center;
   font-size: 36px;
@@ -392,7 +393,7 @@ body {
   justify-content: center;
 }
 
-.container {
+#projects .container {
   height: 400px;
   display: flex;
   flex-wrap: nowrap;
@@ -470,3 +471,4 @@ input:checked + label .description {
 }
 .card[for="c2"] {
   background-image: url("images/amazon\ image.jpg");
+}
