@@ -15,6 +15,9 @@
             <img src="images/P.png" class="logo" />
             <h1>arvesh</h1>
           </div>
+          <div class="holder"></div>
+          <img src="images/bulb.png" class="bulb" id="bulb" alt="Light Bulb" />
+          <div class="reflection"></div>
 
           <ul>
             <li><a href="#">Home</a></li>
@@ -30,8 +33,14 @@
             Hi, I'm <span>Parvesh</span><br />
             From India
           </h1>
-          <img src="images/clipart401418.png" class="coder_image" />
+          <img
+            src="images/file.png"
+            class="bulb_switch"
+            id="switch"
+            alt="Bulb Switch"
+          />
         </div>
+        <img src="images/clipart401418.png" class="coder_image" />
       </div>
     </div>
 
@@ -248,6 +257,16 @@
       dogImage.addEventListener("mouseout", () => {
         dogSound.pause();
         dogSound.currentTime = 0; // Reset audio to start when hover again
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bulb = document.getElementById("bulb");
+        const switchElement = document.getElementById("switch");
+
+        switchElement.addEventListener("click", () => {
+          bulb.classList.toggle("on"); // Toggle the 'on' class on the bulb image
+        });
       });
     </script>
   </body>
