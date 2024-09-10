@@ -55,12 +55,15 @@ nav {
 }
 .Plogo {
   width: 150px;
-  margin-left: 0; /* Remove margin-left to avoid extra spacing */
+  margin-left: -80px; /* Remove margin-left to avoid extra spacing */
   margin-right: 10px;
 }
 .Plogo:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+nav ul {
+  margin-right: -80px;
 }
 nav ul li {
   display: inline-block;
@@ -86,6 +89,22 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header-text p {
+  animation: fadeIn 4s ease-in-out forwards;
+  opacity: 0; /* Start hidden */
+}
+
 .header-text {
   margin-top: 20%;
   font-size: 30px;
@@ -93,9 +112,15 @@ nav ul li a:hover::after {
 .header-text h1 {
   font-size: 60px;
   margin-top: 20px;
+  animation: fadeIn 4s ease-in-out forwards;
+  opacity: 0; /* Start hidden */
 }
+/* Add a slight delay to the name to make the animation more dynamic */
+
 .header-text h1 span {
   color: #8fedd9;
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0; /* Start hidden */
 }
 /* ---------------------about------------------ */
 /* #about {
