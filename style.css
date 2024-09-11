@@ -57,7 +57,9 @@ nav {
   opacity: 0.5;
   transform: translateX(-50%) rotateX(0deg) rotateY(0deg);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 50% 50% 40% 40%;
 }
+
 .bulb.on {
   transform: translateX(-50%) rotateX(0deg) rotateY(0deg);
   /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.8); Glow effect */
@@ -84,11 +86,17 @@ nav {
   width: 2000px;
   height: 625px;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(237, 237, 235, 0.932) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: 0 0 30px 10px
+    rgba(
+      circle at center,
+      #e1e0ac 0%,
+      /* Bright yellow at the center */ #e3e476 10%,
+      /* Slightly darker yellow */ #9c9782 20%,
+      /* Golden yellow */ #e67e22 20%
+    ); /* Darker amber at the edges */
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 30px 10px rgba(248, 249, 171, 0.7),
+    /* Outer yellow glow */ 0 0 50px 30px rgba(255, 255, 128, 0.3); /* Inner glow */
   opacity: 0;
   transition: opacity 0.5s ease;
 }
