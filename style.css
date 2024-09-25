@@ -46,64 +46,7 @@ nav {
   width: 50px;
   margin-right: 0px;
 }
-/* Style for the bulb switch */
 
-/* Style for the bulb */
-.bulb {
-  width: 100px;
-  margin-right: -500px;
-  margin-left: -300px;
-  margin-top: -40px;
-  opacity: 0.5;
-  transform: translateX(-50%) rotateX(0deg) rotateY(0deg);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  border-radius: 50% 50% 40% 40%;
-}
-
-.bulb.on {
-  transform: translateX(-50%) rotateX(0deg) rotateY(0deg);
-  /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.8); Glow effect */
-}
-/* Light bulb holder */
-.holder {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) rotateX(35deg) rotateY(25deg);
-  width: 100px;
-  height: 50px;
-  /* background: #333; */
-  /* border-radius: 50% 50% 0 0; */
-}
-
-/* Light reflection */
-.reflection {
-  position: absolute;
-  top: -150px;
-  margin-top: 0px;
-  margin-left: 500px;
-  transform: translateX(-50%) scaleY(2);
-  width: 2000px;
-  height: 625px;
-  border-radius: 50%;
-  background: 0 0 30px 10px
-    rgba(
-      circle at center,
-      #e1e0ac 0%,
-      /* Bright yellow at the center */ #e3e476 10%,
-      /* Slightly darker yellow */ #9c9782 20%,
-      /* Golden yellow */ #e67e22 20%
-    ); /* Darker amber at the edges */
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 30px 10px rgba(248, 249, 171, 0.7),
-    /* Outer yellow glow */ 0 0 50px 30px rgba(255, 255, 128, 0.3); /* Inner glow */
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.bulb.on ~ .reflection {
-  opacity: 1;
-}
 .coder_image {
   width: 30%;
   margin-right: 0px;
@@ -176,15 +119,7 @@ nav ul li a:hover::after {
   animation: fadeIn 4s ease-in-out forwards;
   opacity: 0; /* Start hidden */
 }
-.bulb_switch {
-  width: 60px;
-  margin-top: -1000px; /* Space between switch and bulb */
-  height: 600px;
-  cursor: pointer;
-  /* margin-right: -800px; */
-  margin-left: 400px;
-  transform: translateX(-50%);
-}
+
 /* Add a slight delay to the name to make the animation more dynamic */
 
 .header-text h1 span {
